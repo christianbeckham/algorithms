@@ -45,13 +45,21 @@ print(f'Task 3: List contains a repeated name - {result}')
 
 
 # Task 4: Sort List
-# Time Complexity: # - O(#)
+# Time Complexity: Quadratic - O(n^2)
 
 # sort list in ascending order
 # cannot use built in .sort() method
 
 def sort_list(array):
-    pass
+    for _ in range(len(array)):
+        for index in range(len(array) - 1):
+            first_number = array[index]
+            second_number = array[index + 1]
+            if first_number > second_number:
+                temp = array[index]
+                array[index] = array[index + 1]
+                array[index + 1] = temp
+    return array
 
 
 unsorted_array = [6, 8, 3, 4, 7, 2]
