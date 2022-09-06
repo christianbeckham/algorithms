@@ -29,6 +29,7 @@ print(f'Task 2: Numbers in the list are less than 100 - {result}')
 # Task 3: Repeated names
 # Time Complexity: Linear - O(n)
 
+
 def contains_repeated_name(list_of_names):
     all_names = []
     for name in list_of_names:
@@ -36,9 +37,24 @@ def contains_repeated_name(list_of_names):
             return True
         all_names.append(name)
     return False
-        
+
 
 names = ['Bob', 'Fred', 'Chuck', 'Fred']
 result = contains_repeated_name(names)
 print(f'Task 3: List contains a repeated name - {result}')
-[].__contains__
+
+
+# Task 4: Sort List
+# Time Complexity: # - O(#)
+
+# sort list in ascending order
+# cannot use built in .sort() method
+
+def sort_list(array):
+    pass
+
+
+unsorted_array = [6, 8, 3, 4, 7, 2]
+sorted = sort_list(unsorted_array)
+# sorted should be [2, 3, 4, 6, 7, 8]
+print(f'Task 4: Sorted array is {sorted}')
