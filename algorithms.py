@@ -25,3 +25,20 @@ def list_contains_numbers_less_than_100(list_of_numbers):
 list_of_numbers = [19, 56, 44, 99]
 result = list_contains_numbers_less_than_100(list_of_numbers)
 print(f'Task 2: Numbers in the list are less than 100 - {result}')
+
+# Task 3: Repeated names
+# Time Complexity: Linear - O(n)
+
+def contains_repeated_name(list_of_names):
+    all_names = []
+    for name in list_of_names:
+        if name in all_names:
+            return True
+        all_names.append(name)
+    return False
+        
+
+names = ['Bob', 'Fred', 'Chuck', 'Fred']
+result = contains_repeated_name(names)
+print(f'Task 3: List contains a repeated name - {result}')
+[].__contains__
